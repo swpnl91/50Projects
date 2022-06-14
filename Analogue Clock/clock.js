@@ -43,3 +43,21 @@ function drawFace(ctx, radius){
   ctx.fillStyle = '#333';
   ctx.fill();
 }
+
+function drawNumbers(ctx, radius) {
+  let ang;
+  let num;
+  ctx.font = radius*0.15 + "px arial"; //set font at 15% of radius
+  ctx.textBaseline = "middle"; //set text alignment to middle
+  ctx.textAlign = "center"; //set text alignment to center
+  for(num=1; num < 13; num++){ //calculate the print position for each number
+      ang = num *Math.PI /6;
+      ctx.rotate(ang);
+      ctx.translate(0, -radius*0.85);
+      ctx.rotate(-ang);
+      ctx.fillText(num.toString(), 0, 0);
+      ctx.rotate(ang);
+      ctx.translate(0, radius*0.85);
+      ctx.rotate(-ang);
+  }
+}
