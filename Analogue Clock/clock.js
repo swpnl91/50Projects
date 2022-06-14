@@ -6,3 +6,6 @@ const ctx = canvas.getContext('2d');
 
 //calculate the clock radius by using the height
 const radius = canvas.height / 2;
+
+//remap the x and y axis to the center of the canvas
+ctx.translate(radius, radius);
