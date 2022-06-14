@@ -12,3 +12,5 @@ ctx.translate(radius, radius);
 
 //reduce clock radius by 90%
 radius = radius * 0.90;
+
+setInterval(drawClock, 1000); //run the drawClock function every second.
