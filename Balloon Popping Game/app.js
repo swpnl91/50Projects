@@ -9,3 +9,8 @@ document.addEventListener('mouseover', function(e){
     checkAllPopped();
   } 
 });
+
+function removeEvent(e){
+  e.target.removeEventListener('mouseover', function(){   
+  })
+};
