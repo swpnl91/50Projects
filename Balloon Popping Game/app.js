@@ -14,3 +14,7 @@ function removeEvent(e){
   e.target.removeEventListener('mouseover', function(){   
   })
 };
+
+function checkAllPopped(){
+  
+};
