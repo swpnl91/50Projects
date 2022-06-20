@@ -1,0 +1,1 @@
+let sendButton = document.getElementById('send');
