@@ -13,3 +13,7 @@ function getTimeRemaining(endtime){
         'seconds' : seconds
     };
 }
+
+function initializeClock(id, endtime){
+  
+}
