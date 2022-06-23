@@ -22,6 +22,11 @@ function initializeClock(id, endtime){
   const secondsSpan = clock.querySelector('.seconds'); // grab the seconds span tag from the #clockdiv's div
 
   function updateClock(){
+    let t = getTimeRemaining(endtime); // calculate endtime date - current date and return a date object with days, hours, minutes, and seconds
     
+    daysSpan.innerHTML = t.days; //display number of days
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2); //use negative to slice from end of string. when number is 024, the 0 will be sliced, return 24. When number is 09, slice will return 09. 
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
   }
 }
