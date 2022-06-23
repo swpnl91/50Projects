@@ -19,4 +19,5 @@ function initializeClock(id, endtime){
   const daysSpan = clock.querySelector('.days'); // grab the days span tag from the #clockdiv's div
   const hoursSpan = clock.querySelector('.hours'); // grab the hours span tag from the #clockdiv's div
   const minutesSpan = clock.querySelector('.minutes'); // grab the minutes span tag from the #clockdiv's div
+  const secondsSpan = clock.querySelector('.seconds'); // grab the seconds span tag from the #clockdiv's div
 }
