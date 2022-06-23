@@ -28,5 +28,9 @@ function initializeClock(id, endtime){
     hoursSpan.innerHTML = ('0' + t.hours).slice(-2); //use negative to slice from end of string. when number is 024, the 0 will be sliced, return 24. When number is 09, slice will return 09. 
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    
+    if(t.total <=0){
+      clearInterval(timeinterval);
+    }
   }
 }
