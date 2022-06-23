@@ -16,4 +16,6 @@ function getTimeRemaining(endtime){
 
 function initializeClock(id, endtime){
   const clock = document.getElementById(id); //first grab #clockdiv from div
+  const daysSpan = clock.querySelector('.days'); // grab the days span tag from the #clockdiv's div
+
 }
