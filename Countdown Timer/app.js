@@ -33,4 +33,6 @@ function initializeClock(id, endtime){
       clearInterval(timeinterval);
     }
   }
+
+  updateClock();
 }
