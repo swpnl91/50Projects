@@ -34,3 +34,7 @@ switch(dayOfWeekNumber){
       quote = 'Time to party!';
       break;
 }
+
+//Display the day of the week
+let weekdayDiv = document.getElementById('weekday');
+weekdayDiv.innerHTML = `${nameOfDay}`;
