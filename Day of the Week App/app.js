@@ -2,3 +2,4 @@
 let date = new Date();
 let dayOfWeekNumber = date.getDay();
 let nameOfDay;
+let quote;
