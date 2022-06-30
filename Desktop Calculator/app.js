@@ -3,3 +3,4 @@ let primaryOperand = '';
 let secondaryOperand = '';
 let operand = '';
 let operand2 = '';
+let savedOperator = '';
