@@ -5,3 +5,4 @@ let operand = '';
 let operand2 = '';
 let savedOperator = '';
 let results = '';
+let operator = '';
