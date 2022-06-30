@@ -35,3 +35,20 @@ function getPrimaryOperand(){
         })
     })   
 }
+
+function getSecondaryOperand(operator){
+    buttons.forEach(function(button){
+        button.addEventListener('click', function(e){
+
+        operand2 = e.target.textContent
+            
+         if (operand2 !== "0" && operand2 !== "+" && operand2 !== "-" && operand2 !== "X" && operand2 !== "÷" && operand2 !== "=" && operand2 !== "C"){
+                secondaryOperand += e.target.textContent;
+                console.log(secondaryOperand);
+            } else if (operand === "="){
+                
+                calculateNumber(primaryOperand, operator, secondaryOperand);
+            }
+        })
+    })   
+}
