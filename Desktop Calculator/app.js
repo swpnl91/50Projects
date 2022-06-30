@@ -13,3 +13,8 @@ function calculateNumber(primaryOperand, operator, secondaryOperand){
      results = eval(primaryOperand + operator + secondaryOperand);
      return results;
 }
+
+function saveOperator(operator){
+    savedOperator = operator;
+    return savedOperator;
+}
