@@ -18,3 +18,20 @@ function saveOperator(operator){
     savedOperator = operator;
     return savedOperator;
 }
+
+function getPrimaryOperand(){
+    buttons.forEach(function(button){
+        button.addEventListener('click', function(e){
+
+        operand = e.target.textContent
+            
+         if (operand !== "0" && operand !== "+" && operand !== "-" && operand !== "X" && operand !== "÷" && operand !== "=" && operand !== "C"){
+                primaryOperand += e.target.textContent;
+                console.log(primaryOperand);
+            } else if (operand === "+" || operand === "-" || operand === "X" || operand === "÷" || operand === "=" || operand !== "C"){
+                operator = operand;
+                getSecondaryOperand(operator);
+            }
+        })
+    })   
+}
