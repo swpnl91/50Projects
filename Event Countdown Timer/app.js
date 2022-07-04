@@ -16,6 +16,10 @@ let x = setInterval(function(){
   //output timer to HTML
   document.getElementById('root').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   
-  
+  //stop countdown timer when date is reached
+  if (distance < 0){
+    clearInterval(x);
+    document.getElementById('root').innerHTML = 'Timer Expired';
+  }
   
 }, 1000);
