@@ -1,0 +1,2 @@
+//Set date to countdown to:
+let countDownFromDate = new Date('Feb 1, 2020 12:00:00').toDateString();
