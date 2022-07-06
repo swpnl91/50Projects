@@ -8,4 +8,6 @@ form.addEventListener('submit', function(e){
 
   e.preventDefault();
 
+  feet = parseInt(feet.value);
+
 })
