@@ -6,4 +6,6 @@ form.addEventListener('submit', function(e){
   let inches = document.querySelector('#inches');
   const results = document.querySelector('#results');
 
+  e.preventDefault();
+
 })
