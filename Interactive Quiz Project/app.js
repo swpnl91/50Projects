@@ -27,3 +27,4 @@ const questions = [
 ];
 
 let currentQuestion = 0;
+let correctAnswers = 0;
