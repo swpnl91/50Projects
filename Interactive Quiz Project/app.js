@@ -95,3 +95,9 @@ function displayCurrentQuestion(){
 
   }
 }
+
+function resetQuiz(){
+  currentQuestion = 0;
+  correctAnswers = 0;
+  hideScore();
+}
