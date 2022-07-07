@@ -25,3 +25,5 @@ const questions = [
       correctAnswer: 1
   }
 ];
+
+let currentQuestion = 0;
