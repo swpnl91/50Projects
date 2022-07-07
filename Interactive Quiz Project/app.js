@@ -101,3 +101,8 @@ function resetQuiz(){
   correctAnswers = 0;
   hideScore();
 }
+
+function displayScore(){
+  document.querySelector('.quizContainer > .result').innerText = 'You scored: ' + correctAnswers + ' out of ' + questions.length;
+  document.querySelector('.quizContainer > .result').style.display = 'block';
+}
