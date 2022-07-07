@@ -71,3 +71,27 @@ window.addEventListener('DOMContentLoaded', function(e){
       }
   });
 });
+
+function displayCurrentQuestion(){
+  console.log('In display current Questions');
+
+  var question = questions[currentQuestion].question;
+  var questionClass = document.querySelector('.quizContainer > .question');
+  var choiceList = document.querySelector('.quizContainer > .choiceList');
+  var numChoices = questions[currentQuestion].choices.length;
+
+  //Set the questionClass text to the current question
+  questionClass.innerText = question;
+
+  //Remove all current <li> elements (if any)
+  choiceList.innerHTML = '';
+
+  var choice;
+  for (i = 0; i < numChoices; i++){
+      choice = questions[currentQuestion].choices[i];
+      var li = document.createElement('li');
+          li.innerHTML = '<li><input type="radio" value="' + i + '" name="dynradio" />' + choice + '</li>'
+      choiceList.appendChild(li);
+
+  }
+}
