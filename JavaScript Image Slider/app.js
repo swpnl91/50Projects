@@ -12,3 +12,7 @@ canvas.style.background = `url(./images/${images[0]})`
 
 //add eventListeners to arrows
 let arrows = document.querySelectorAll('.arrow');
+
+arrows.forEach(function(arrow){
+  
+});
