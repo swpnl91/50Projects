@@ -4,3 +4,6 @@ let images = [
 ]
 
 let i = 0;
+
+//add initial image to canvas
+let canvas = document.getElementById('canvas');
