@@ -1,0 +1,1 @@
+const light = document.querySelector('#bulb');
