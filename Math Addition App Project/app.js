@@ -13,4 +13,11 @@ let secondary = document.getElementById('secondary-number');
 secondary.innerHTML = `<p>${secondNumber}</p>`
 
 //get guess from user
-let button = document.getElementById('btn')
+let button = document.getElementById('btn');
+
+button.addEventListener('click', function(){
+
+  let guess = document.getElementById('guess').value;
+      guess = Number(guess);
+  
+});
