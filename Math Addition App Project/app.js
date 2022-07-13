@@ -8,3 +8,5 @@ let total = firstNumber + secondNumber;
 //display numbers on the canvas
 let primary = document.getElementById('primary-number');
 primary.innerHTML = `<p>${firstNumber}</p>`;
+
+let secondary = document.getElementById('secondary-number');
