@@ -7,3 +7,4 @@ let total = firstNumber + secondNumber;
 
 //display numbers on the canvas
 let primary = document.getElementById('primary-number');
+primary.innerHTML = `<p>${firstNumber}</p>`;
