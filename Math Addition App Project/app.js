@@ -11,3 +11,6 @@ primary.innerHTML = `<p>${firstNumber}</p>`;
 
 let secondary = document.getElementById('secondary-number');
 secondary.innerHTML = `<p>${secondNumber}</p>`
+
+//get guess from user
+let button = document.getElementById('btn')
