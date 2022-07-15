@@ -55,3 +55,11 @@ function checkGuess(guess){
       displayMessage(`Too High! Try again!`);
   }
 }
+
+function displayGuesses(guess){
+  userInput.value = '';
+  guessSlot.innerHTML += `${guess}  `;
+  numGuesses++
+  remaining.innerHTML = `${11 - numGuesses}  `;
+}
+
