@@ -10,3 +10,12 @@ const p = document.createElement('p');
 let previousGuesses = [];
 let numGuesses = 1;
 let playGame = true;
+
+if (playGame){
+  subt.addEventListener('click', function(e){
+      e.preventDefault();
+      //Grab guess from user
+      const guess = parseInt(userInput.value);
+      validateGuess(guess);
+  });
+}
