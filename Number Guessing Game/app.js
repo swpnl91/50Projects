@@ -63,3 +63,9 @@ function displayGuesses(guess){
   remaining.innerHTML = `${11 - numGuesses}  `;
 }
 
+function displayMessage(message){
+  lowOrHi.innerHTML = `<h1>${message}</h1>`
+}
+
+
+
