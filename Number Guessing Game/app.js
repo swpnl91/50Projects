@@ -9,3 +9,4 @@ const lowOrHi = document.querySelector('.lowOrHi');
 const p = document.createElement('p');
 let previousGuesses = [];
 let numGuesses = 1;
+let playGame = true;
