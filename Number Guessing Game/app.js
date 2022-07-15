@@ -7,3 +7,4 @@ const remaining = document.querySelector('.lastResult');
 const startOver = document.querySelector('.resultParas');
 const lowOrHi = document.querySelector('.lowOrHi');
 const p = document.createElement('p');
+let previousGuesses = [];
