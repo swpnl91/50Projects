@@ -1,0 +1,1 @@
+let billAmount = document.getElementById('bill-amount');
