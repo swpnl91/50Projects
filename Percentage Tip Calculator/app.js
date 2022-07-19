@@ -5,6 +5,7 @@ let total = document.getElementById('total');
 let calculate = document.getElementById('calculate');
 
 calculate.addEventListener('click', function(){
+  billAmount = Number(billAmount.value);
   
   
 
