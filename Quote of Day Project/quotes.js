@@ -21,6 +21,6 @@ const arrayOfQuotes = [
 ];
 
 function generateQuote(){
-  
+  const random = Number.parseInt(Math.random()*arrayOfQuotes.length + 1);
   
 }
