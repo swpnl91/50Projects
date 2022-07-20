@@ -22,5 +22,6 @@ const arrayOfQuotes = [
 
 function generateQuote(){
   const random = Number.parseInt(Math.random()*arrayOfQuotes.length + 1);
-  
+  document.querySelector('#quoteOutput').textContent = `\"${arrayOfQuotes[random].quote}\"`;
+  document.querySelector('#authorOutput').textContent = `--${arrayOfQuotes[random].author}`;
 }
