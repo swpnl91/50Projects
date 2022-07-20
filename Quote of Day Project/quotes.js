@@ -19,3 +19,8 @@ const arrayOfQuotes = [
    'quote': 'Do not take life too seriously. You will not get out alive.'
   },
 ];
+
+function generateQuote(){
+  
+  
+}
