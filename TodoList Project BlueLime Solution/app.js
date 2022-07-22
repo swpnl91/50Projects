@@ -55,3 +55,5 @@ console.log(html);
 }
 
 document.getElementById('add').addEventListener('click', add);
+
+show();
