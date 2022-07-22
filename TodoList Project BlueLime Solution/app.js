@@ -53,3 +53,5 @@ console.log(html);
       buttons[i].addEventListener('click', remove);
   };
 }
+
+document.getElementById('add').addEventListener('click', add);
