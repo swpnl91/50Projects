@@ -19,3 +19,8 @@ function add(){
   clearDefault();
   return false; //avoids any futher action with click event
 }
+
+//clear the task value from input box
+function clearDefault(){
+  document.getElementById('task').value = '';
+};
