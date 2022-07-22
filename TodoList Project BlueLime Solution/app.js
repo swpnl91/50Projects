@@ -24,3 +24,15 @@ function add(){
 function clearDefault(){
   document.getElementById('task').value = '';
 };
+
+//remove tasks from the list
+function remove(){
+  var id = this.getAttribute('id');//refers to current DOM element
+  var todos = get_todos();
+  todos.splice(id, 1);
+  localStorage.setItem('todo', JSON.stringify(todos));
+
+  show();
+
+  return false; //avoids further action with click event
+}
