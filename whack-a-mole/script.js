@@ -21,3 +21,15 @@ function randomHole(holes){
   lastHole = hole;
   return hole;
 }
+
+function peep() {
+  const time = randomTime(500, 1000); //get a random time to determine how long mole should peep
+  const hole = randomHole(holes); //get the random hole from the randomHole function
+  hole.classList.add('up'); //add the CSS class so selected mole can "pop up"
+  setTimeout(() => {
+      hole.classList.remove('up'); //make the selected mole "pop down" after a random time
+      if(!timeUp) {
+          peep();
+      }
+  }, time);
+}
