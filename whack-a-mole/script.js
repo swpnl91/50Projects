@@ -41,3 +41,10 @@ function startGame() {
   peep();
   setTimeout(() => timeUp = true, 15000) //show random moles for 15 seconds
 }
+
+function wack(e){
+  if(!e.isTrusted) return; //** new thing I learned */
+  score++;
+  this.parentNode.classList.remove('up'); //this refers to item clicked
+  scoreBoard.textContent = score;
+}
