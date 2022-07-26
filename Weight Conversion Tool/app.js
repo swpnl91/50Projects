@@ -6,7 +6,7 @@ form.addEventListener('submit', function(e){
     e.preventDefault();
     const input = document.querySelector('input');
     let results = document.querySelector('span');
-    
+    let poundsToKG;
     
     
 })
