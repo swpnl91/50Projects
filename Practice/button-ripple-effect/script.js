@@ -9,6 +9,8 @@ buttons.forEach(button => {
     const buttonLeft = e.target.offsetLeft
 
     const xInside = x - buttonLeft
+    const yInside = y - buttonTop
+
     
   })
 })
