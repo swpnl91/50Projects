@@ -6,6 +6,8 @@ buttons.forEach(button => {
     const y = e.clientY
 
     const buttonTop = e.target.offsetTop
+    const buttonLeft = e.target.offsetLeft
+
     
   })
 })
