@@ -5,5 +5,6 @@ range.addEventListener('input', (e) => {
   const label = e.target.nextElementSibling
 
   const range_width = getComputedStyle(e.target).getPropertyValue('width')
+  const label_width = getComputedStyle(label).getPropertyValue('width')
   
 })
