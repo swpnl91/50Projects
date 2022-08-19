@@ -27,5 +27,7 @@ const createHeart = (e) => {
   const y = e.clientY
 
   const leftOffset = e.target.offsetLeft
+  const topOffset = e.target.offsetTop
+
   
 }
