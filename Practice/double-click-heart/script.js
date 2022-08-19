@@ -32,5 +32,12 @@ const createHeart = (e) => {
   const xInside = x - leftOffset
   const yInside = y - topOffset
 
-  
+  heart.style.top = `${yInside}px`
+  heart.style.left = `${xInside}px`
+
+  loveMe.appendChild(heart)
+
+  times.innerHTML = ++timesClicked
+
+  setTimeout(() => heart.remove(), 1000)
 }
