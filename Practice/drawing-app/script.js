@@ -12,3 +12,4 @@ let isPressed = false
 colorEl.value = 'black'
 let color = colorEl.value
 let x
+let y
