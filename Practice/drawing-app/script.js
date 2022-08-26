@@ -6,3 +6,5 @@ const colorEl = document.getElementById('color');
 const clearEl = document.getElementById('clear');
 
 const ctx = canvas.getContext('2d');
+
+let size = 10
