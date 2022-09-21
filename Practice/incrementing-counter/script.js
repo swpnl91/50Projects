@@ -7,6 +7,8 @@ counters.forEach(counter => {
     const target = +counter.getAttribute('data-target')
     const c = +counter.innerText
 
+    const increment = target / 200
+
     
   }
 
