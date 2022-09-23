@@ -68,3 +68,11 @@ function addInsects() {
   setTimeout(createInsect, 1000)
   setTimeout(createInsect, 1500)
 }
+
+function increaseScore() {
+  score++
+  if(score > 19) {
+      message.classList.add('visible')
+  }
+  scoreEl.innerHTML = `Score: ${score}`
+}
