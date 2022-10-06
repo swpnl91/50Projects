@@ -22,3 +22,13 @@ if (!password) {
 navigator.clipboard.writeText(password);
   alert('Password copied to clipboard!')
 })
+
+generateEl.addEventListener('click', () => {
+  const length = +lengthEl.value
+  const hasLower = lowercaseEl.checked
+  const hasUpper = uppercaseEl.checked
+  const hasNumber = numbersEl.checked
+  const hasSymbol = symbolsEl.checked
+
+  resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length)
+})
