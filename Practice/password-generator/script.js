@@ -13,3 +13,12 @@ const randomFunc = {
   number: getRandomNumber,
   symbol: getRandomSymbol
 }
+
+clipboardEl.addEventListener('click', () => {
+  const password = resultEl.innerText;
+if (!password) {
+  return;
+}
+navigator.clipboard.writeText(password);
+  alert('Password copied to clipboard!')
+})
