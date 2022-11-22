@@ -74,3 +74,5 @@ function updateTestimonial() {
     idx = 0
   }
 }
+
+setInterval(updateTestimonial, 10000)
