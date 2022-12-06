@@ -6,3 +6,9 @@ panels.forEach((panel) => {
     panel.classList.add("active");
   });
 });
+
+const removeActiveClasses = () => {
+  panels.forEach((panel) => {
+    panel.classList.remove("active");
+  });
+};
