@@ -8,3 +8,5 @@ const checkBoxes = () => {
     else box.classList.remove("show");
   });
 };
+
+window.addEventListener("scroll", checkBoxes);
