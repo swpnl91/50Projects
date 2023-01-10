@@ -6,6 +6,8 @@ const generateJoke = async () => {
     headers: { Accept: "application/json" },
   };
   
+  const res = await fetch("https://icanhazdadjoke.com/", config);
+  
 
   // Fetching with .then()
   //   fetch("https://icanhazdadjoke.com/", config)
