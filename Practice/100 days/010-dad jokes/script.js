@@ -17,3 +17,5 @@ const generateJoke = async () => {
 };
 
 generateJoke();
+
+jokeBtn.addEventListener("click", () => generateJoke());
