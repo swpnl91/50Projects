@@ -15,3 +15,5 @@ const generateJoke = async () => {
   //     .then((res) => res.json())
   //     .then((data) => (jokeEl.innerHTML = data.joke));
 };
+
+generateJoke();
