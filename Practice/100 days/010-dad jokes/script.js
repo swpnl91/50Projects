@@ -8,7 +8,7 @@ const generateJoke = async () => {
   
   const res = await fetch("https://icanhazdadjoke.com/", config);
   const data = await res.json();
-  
+  jokeEl.innerHTML = data.joke;
 
   // Fetching with .then()
   //   fetch("https://icanhazdadjoke.com/", config)
