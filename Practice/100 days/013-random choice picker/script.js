@@ -14,3 +14,8 @@ const createTags = (input) => {
     tagsElements.appendChild(tagElement);
   });
 };
+
+const pickRandomTag = () => {
+  const tags = document.querySelectorAll(".tag");
+  return tags[Math.floor(Math.random() * tags.length)];
+};
