@@ -1,0 +1,1 @@
+const tagsElements = document.getElementById("tags");
