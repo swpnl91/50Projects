@@ -35,5 +35,5 @@ const highlightCups = (index) => {
     if (index2 <= index) cup.classList.add("full");
     else cup.classList.remove("full");
   });
-
+  updateBigCup();
 };
