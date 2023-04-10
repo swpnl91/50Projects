@@ -37,3 +37,7 @@ const highlightCups = (index) => {
   });
   updateBigCup();
 };
+
+smallCups.forEach((cup, index) =>
+  cup.addEventListener("click", () => highlightCups(index))
+);
