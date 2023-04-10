@@ -31,5 +31,9 @@ const highlightCups = (index) => {
   ) {
     index--;
   }
+  smallCups.forEach((cup, index2) => {
+    if (index2 <= index) cup.classList.add("full");
+    else cup.classList.remove("full");
+  });
 
 };
