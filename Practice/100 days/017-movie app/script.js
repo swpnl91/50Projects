@@ -42,3 +42,5 @@ const getMovies = async (url) => {
   const data = await res.json();
   showMovies(data.results);
 };
+
+getMovies(API_URL);
