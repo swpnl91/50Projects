@@ -5,3 +5,4 @@ const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${KEY}&que
 
 const main = document.getElementById("main");
 const form = document.getElementById("form");
+const search = document.getElementById("search");
