@@ -27,3 +27,5 @@ leftButton.addEventListener("click", () => {
   setBackground();
   setActiveSlide();
 });
+
+setBackground();
