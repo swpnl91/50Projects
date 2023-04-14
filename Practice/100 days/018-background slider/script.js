@@ -13,3 +13,10 @@ const setActiveSlide = () => {
   slides.forEach((slide) => slide.classList.remove("active"));
   slides[activeSlide].classList.add("active");
 };
+
+rightButton.addEventListener("click", () => {
+  activeSlide++;
+  if (activeSlide > slides.length - 1) activeSlide = 0;
+  setBackground();
+  setActiveSlide();
+});
