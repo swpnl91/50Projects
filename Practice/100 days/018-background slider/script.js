@@ -20,3 +20,10 @@ rightButton.addEventListener("click", () => {
   setBackground();
   setActiveSlide();
 });
+
+leftButton.addEventListener("click", () => {
+  activeSlide--;
+  if (activeSlide < 0) activeSlide = slides.length - 1;
+  setBackground();
+  setActiveSlide();
+});
