@@ -8,3 +8,8 @@ let activeSlide = 0;
 const setBackground = () => {
   body.style.backgroundImage = slides[activeSlide].style.backgroundImage;
 };
+
+const setActiveSlide = () => {
+  slides.forEach((slide) => slide.classList.remove("active"));
+  slides[activeSlide].classList.add("active");
+};
