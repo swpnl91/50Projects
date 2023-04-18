@@ -86,3 +86,5 @@ const setTime = () => {
 };
 
 setTime();
+
+setInterval(setTime, 1000);
