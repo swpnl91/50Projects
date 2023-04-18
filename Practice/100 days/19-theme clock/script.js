@@ -84,3 +84,5 @@ const setTime = () => {
   } ${ampm}`;
   dateElement.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`;
 };
+
+setTime();
