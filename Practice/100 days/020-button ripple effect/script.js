@@ -7,6 +7,7 @@ buttons.forEach((button) => {
     const buttonTop = e.target.offsetTop;
     const buttonLeft = e.target.offsetLeft;
     const xInside = x - buttonLeft;
+    const yInside = y - buttonTop;
     
   });
 });
