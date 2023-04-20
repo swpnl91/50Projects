@@ -23,3 +23,8 @@ const dragEnter = function (e) {
 const dragLeave = function () {
   this.className = "empty";
 };
+
+const dragDrop = function () {
+  this.className = "empty";
+  this.append(fill);
+};
