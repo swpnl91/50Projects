@@ -28,3 +28,5 @@ const dragDrop = function () {
   this.className = "empty";
   this.append(fill);
 };
+
+fill.addEventListener("dragstart", dragStart);
