@@ -1,0 +1,1 @@
+const fill = document.querySelector(".fill");
