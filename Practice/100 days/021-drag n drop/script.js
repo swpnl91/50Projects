@@ -9,3 +9,8 @@ const dragStart = function () {
 const dragEnd = function () {
   this.className = "fill";
 };
+
+const dragOver = function (e) {
+  // Ref: https://developer.cdn.mozilla.net/en-US/docs/Web/API/Document/dragover_event
+  e.preventDefault();
+};
