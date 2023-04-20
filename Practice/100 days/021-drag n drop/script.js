@@ -30,3 +30,4 @@ const dragDrop = function () {
 };
 
 fill.addEventListener("dragstart", dragStart);
+fill.addEventListener("dragend", dragEnd);
