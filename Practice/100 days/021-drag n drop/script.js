@@ -14,3 +14,8 @@ const dragOver = function (e) {
   // Ref: https://developer.cdn.mozilla.net/en-US/docs/Web/API/Document/dragover_event
   e.preventDefault();
 };
+
+const dragEnter = function (e) {
+  e.preventDefault();
+  this.className += " hovered";
+};
