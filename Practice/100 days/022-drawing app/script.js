@@ -11,3 +11,5 @@ let size = 10;
 let color = "black";
 let x;
 let y;
+
+let isPressed = false;
