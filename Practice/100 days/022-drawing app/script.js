@@ -5,3 +5,4 @@ const decreaseButton = document.getElementById("decrease");
 const sizeElement = document.getElementById("size");
 const colorElement = document.getElementById("color");
 const clearElement = document.getElementById("clear");
+const ctx = canvas.getContext("2d");
