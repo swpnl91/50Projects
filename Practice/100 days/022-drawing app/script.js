@@ -59,3 +59,9 @@ increaseButton.addEventListener("click", () => {
   if (size > 50) size = 50;
   updateSizeOnScreen();
 });
+
+decreaseButton.addEventListener("click", () => {
+  size -= 5;
+  if (size < 5) size = 5;
+  updateSizeOnScreen();
+});
