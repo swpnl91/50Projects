@@ -30,3 +30,9 @@ const drawLine = (x1, y1, x2, y2) => {
 };
 
 const updateSizeOnScreen = () => (sizeElement.innerText = size);
+
+canvas.addEventListener("mousedown", (e) => {
+  isPressed = true;
+  x = e.offsetX;
+  y = e.offsetY;
+});
