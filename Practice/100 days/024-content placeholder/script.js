@@ -42,3 +42,5 @@ const getData = () => {
     background.classList.remove("animated-bg-text")
   );
 };
+
+setTimeout(getData, 2500);
