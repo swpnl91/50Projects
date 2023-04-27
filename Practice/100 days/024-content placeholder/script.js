@@ -19,3 +19,5 @@ const monthNames = [
   "Nov",
   "Dec",
 ];
+
+const animated_bgs = document.querySelectorAll(".animated-bg");
