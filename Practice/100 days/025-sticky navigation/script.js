@@ -5,3 +5,5 @@ const fixNav = () => {
   else nav.classList.remove("active");
 };
 
+window.addEventListener("scroll", fixNav);
+
