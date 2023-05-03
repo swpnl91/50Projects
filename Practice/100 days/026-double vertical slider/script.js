@@ -25,3 +25,6 @@ const changeSlide = (direction) => {
     activeSlideIndex * sliderHeight
   }px)`;
 };
+
+upButton.addEventListener("click", () => changeSlide("up"));
+
