@@ -23,3 +23,5 @@ const createNotification = (message = null, type = null) => {
   toasts.appendChild(notif);
   setTimeout(() => notif.remove(), 3000);
 };
+
+button.addEventListener("click", () => createNotification());
