@@ -49,3 +49,14 @@ const addReposToCard = (repos) => {
     reposElement.appendChild(repoElement);
   });
 };
+
+const getUser = async (username) => {
+  try {
+    const { data } = await axios(APIURL + username);
+    createUserCard(data);
+    getRepos(username);
+  } catch (error) {
+    if (error.response.status == 404)
+      createErrorCard("No profile with this username");
+  }
+};
