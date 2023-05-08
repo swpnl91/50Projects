@@ -30,3 +30,10 @@ const createUserCard = (user) => {
     `;
   main.innerHTML = cardHTML;
 };
+
+const createErrorCard = (message) => {
+  const cardHTML = `
+    <div class="card"><h1>${message}</h1></div>
+    `;
+  main.innerHTML = cardHTML;
+};
