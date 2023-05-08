@@ -60,3 +60,12 @@ const getUser = async (username) => {
       createErrorCard("No profile with this username");
   }
 };
+
+const getRepos = async (username) => {
+  try {
+    const { data } = await axios(APIURL + username + "/repos?sort=created");
+    addReposToCard(data);
+  } catch (error) {
+    createErrorCard("Problem fetching repos");
+  }
+};
