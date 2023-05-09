@@ -8,5 +8,6 @@ const createHeart = (e) => {
   const heart = document.createElement("i");
   heart.classList.add("fas");
   heart.classList.add("fa-heart");
+  const x = e.clientX;
 
 };
