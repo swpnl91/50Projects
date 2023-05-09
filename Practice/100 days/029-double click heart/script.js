@@ -3,3 +3,7 @@ const times = document.querySelector("#times");
 
 let clickTime = 0;
 let timesClicked = 0;
+
+const createHeart = (e) => {
+  
+};
