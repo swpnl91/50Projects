@@ -9,5 +9,6 @@ const createHeart = (e) => {
   heart.classList.add("fas");
   heart.classList.add("fa-heart");
   const x = e.clientX;
+  const y = e.clientY;
 
 };
