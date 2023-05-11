@@ -11,3 +11,5 @@ const writeText = () => {
   setTimeout(writeText, speed);
 };
 
+writeText();
+
