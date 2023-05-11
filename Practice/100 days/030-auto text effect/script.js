@@ -1,0 +1,1 @@
+const textElement = document.getElementById("text");
