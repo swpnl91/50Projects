@@ -13,3 +13,6 @@ const clipboardElement = document.getElementById("clipboard");
 const getRandomLower = () =>
   String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 
+const getRandomUpper = () =>
+  String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+
