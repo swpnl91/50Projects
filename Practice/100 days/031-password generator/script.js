@@ -50,3 +50,18 @@ clipboardElement.addEventListener("click", () => {
   textarea.remove();
   createNotification("Password copied to clipboard!");
 });
+
+generateElement.addEventListener("click", () => {
+  const length = +lengthElement.value;
+  const hasLower = lowercaseElement.checked;
+  const hasUpper = uppercaseElement.checked;
+  const hasNumber = numbersElement.checked;
+  const hasSymbol = symbolsElement.checked;
+  resultElement.innerText = generatePassword(
+    hasLower,
+    hasUpper,
+    hasNumber,
+    hasSymbol,
+    length
+  );
+});
