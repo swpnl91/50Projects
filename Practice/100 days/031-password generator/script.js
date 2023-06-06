@@ -38,3 +38,15 @@ const createNotification = (message) => {
   document.body.appendChild(notif);
   setTimeout(() => notif.remove(), 3000);
 };
+
+clipboardElement.addEventListener("click", () => {
+  const password = resultElement.innerText;
+  if (!password) return;
+  const textarea = document.createElement("textarea");
+  textarea.value = password;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  textarea.remove();
+  createNotification("Password copied to clipboard!");
+});
