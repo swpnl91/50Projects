@@ -23,3 +23,10 @@ const getRandomSymbol = () => {
   const symbols = "!@#$%^&*(){}[]=<>/,.";
   return symbols[Math.floor(Math.random() * symbols.length)];
 };
+
+const randomFunctions = {
+  lower: getRandomLower,
+  upper: getRandomUpper,
+  number: getRandomSymbol,
+  symbol: getRandomSymbol,
+};
