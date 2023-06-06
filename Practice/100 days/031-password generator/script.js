@@ -30,3 +30,11 @@ const randomFunctions = {
   number: getRandomSymbol,
   symbol: getRandomSymbol,
 };
+
+const createNotification = (message) => {
+  const notif = document.createElement("div");
+  notif.classList.add("toast");
+  notif.innerText = message;
+  document.body.appendChild(notif);
+  setTimeout(() => notif.remove(), 3000);
+};
