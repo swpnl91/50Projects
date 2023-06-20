@@ -10,3 +10,7 @@ const doTheTrick = (theClickedOne) => {
     if (fast === theClickedOne) cheap.checked = false;
   }
 };
+
+toggles.forEach((toggle) =>
+  toggle.addEventListener("change", (e) => doTheTrick(e.target))
+);
