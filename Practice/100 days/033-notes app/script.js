@@ -19,6 +19,7 @@ const addNewNote = (text = "") => {
   <div class="main ${text ? "" : "hidden"}"></div>
   <textarea class="${text ? "hidden" : ""}"></textarea>`;
 
+  const editButton = note.querySelector(".edit");
 
 
   main.innerHTML = marked(text);
