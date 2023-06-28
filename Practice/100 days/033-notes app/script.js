@@ -42,3 +42,5 @@ const addNewNote = (text = "") => {
   });
   document.body.appendChild(note);
 };
+
+addButton.addEventListener("click", () => addNewNote());
