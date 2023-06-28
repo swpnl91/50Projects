@@ -44,3 +44,7 @@ const addNewNote = (text = "") => {
 };
 
 addButton.addEventListener("click", () => addNewNote());
+
+if (notes) {
+  notes.forEach((note) => addNewNote(note));
+}
