@@ -22,7 +22,8 @@ const addNewNote = (text = "") => {
   const editButton = note.querySelector(".edit");
   const deleteButton = note.querySelector(".delete");
   const main = note.querySelector(".main");
-
+  const textArea = note.querySelector("textarea");
+  textArea.value = text;
 
   main.innerHTML = marked(text);
 
